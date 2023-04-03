@@ -20,3 +20,5 @@ When String is called as a function String(), it coerces the parameter to a stri
 const str = `Safi Check`;
 
 console.log(str.length);
+
+console.log(`Hi I'm Angry`);
