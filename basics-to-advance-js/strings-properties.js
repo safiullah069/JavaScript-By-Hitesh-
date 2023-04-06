@@ -22,3 +22,5 @@ const str = `Safi Check`;
 console.log(str.length);
 
 console.log(`Hi I'm Angry`);
+
+console.log(`testing`);
