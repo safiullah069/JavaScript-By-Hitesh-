@@ -21,6 +21,30 @@ console.log(hello.concat("Kevin", ". Have a nice day."));
 const greetList = ["Hello", " ", "Venkat", "!"];
 "".concat(...greetList); // "Hello Venkat!"
 
+// < ------------- What Is This (...) Spread Operator --------------- >
+
+// The spread operator ... is a feature introduced in ECMAScript 6 (ES6) that allows an iterable (e.g., an array, a string, or an object that implements the Iterable protocol) to be expanded or spread into individual elements. It is denoted by three dots ... preceding the iterable.
+
+// The spread operator can be used in several ways. One common use case is to concatenate or merge arrays. For example:
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const mergedArr = [...arr1, ...arr2]; // [1, 2, 3, 4, 5, 6]
+
+// Another use case is to pass an array as individual arguments to a function. For example:
+
+const nums = [1, 2, 3];
+const sum = (a, b, c) => a + b + c;
+sum(...nums); // 6
+
+
+// The spread operator can also be used with objects to merge their properties. However, unlike arrays, the spread operator only works with enumerable own properties, and not with inherited properties or properties that are not enumerable. Here's an example:
+
+const obj1 = { x: 1, y: 2 };
+const obj2 = { z: 3 };
+const mergedObj = { ...obj1, ...obj2 }; // { x: 1, y: 2, z: 3 }
+
+
 "".concat({}); // "[object Object]"
 "".concat([]); // ""
 "".concat(null); // "null"
