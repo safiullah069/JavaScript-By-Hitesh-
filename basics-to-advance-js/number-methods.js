@@ -56,3 +56,5 @@ const numStr3 = 0.0042;
 // < ------------ Number.toLocaleString ----------------- >
 
 const numStr2 = 123;
+
+console.log(numStr2.toLocaleString(`ar-EG`));
