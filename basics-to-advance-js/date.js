@@ -17,7 +17,7 @@ const today = new Date();
 // console.log(today);
 
 const customizeDate = new Date(`2000-1-22`)
-console.log(customizeDate);
+// console.log(customizeDate);
 
 const calculationOnDate = () => {const birthday = customizeDate.getDay();
     const birthdayMonth = customizeDate.getMonth();
@@ -26,5 +26,32 @@ const calculationOnDate = () => {const birthday = customizeDate.getDay();
     return `I was born on ${customizeDate.getDate()} ${arrayMonth[birthdayMonth]} And The Day Was ${arrayDay[birthday]} And The Year Was ${customizeDate.getFullYear()}`
 }
 
-console.log(calculationOnDate());
+// console.log(calculationOnDate());
+
+// ---------- getMinutes ------------
+
+const getTheMIn = new Date()
+
+// console.log(getTheMIn.getMinutes());
+
+const getYourCurrentHour = () => {
+    const rawHour = getTheMIn.getHours();
+    if (rawHour > 12) {
+        const updatedHour = rawHour - 12
+        return updatedHour;
+    }else{
+        return rawHour;
+    }
+    
+}
+
+
+// console.log(getYourCurrentHour());
+
+// console.log(getTheMIn.getHours());
+// console.log(getTheMIn.getDate());
+// console.log(getTheMIn.getFullYear());
+// console.log(getTheMIn.getMonth());
+
+// ------------ Set Functions OF Date ---------
 
