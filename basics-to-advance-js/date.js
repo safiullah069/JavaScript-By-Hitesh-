@@ -53,5 +53,35 @@ const getYourCurrentHour = () => {
 // console.log(getTheMIn.getFullYear());
 // console.log(getTheMIn.getMonth());
 
+// ----------- Date.now ---------
+
+const currentTime = Date.now();
+// console.log(currentTime);
+
+// ----------- Date .parse -----------
+
+// Necessary To GIve Argument In Parenthesis
+
+const checkParsing = new Date();
+
+// console.log(checkParsing);
+
+const parsingTime = Date.parse('01 Jan 1970');
+
+// console.log(parsingTime);
+
 // ------------ Set Functions OF Date ---------
+
+// ------setDate
+
+const todayEvent = new Date();
+
+todayEvent.setDate(4);
+todayEvent.setFullYear(2000);
+todayEvent.setHours(2);
+
+// console.log(todayEvent.getDate());
+// console.log(todayEvent.getFullYear());
+// console.log(todayEvent.getHours());
+
 
