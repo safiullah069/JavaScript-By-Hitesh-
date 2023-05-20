@@ -78,5 +78,78 @@ const newArray = [1, 2, 3, 4, 5];
 // console.log(newArray.copyWithin(3, 0, 1)); // Changes The Array
 // console.log(newArray);
 
-// ------------ Array.
+// ------------ Array.entries ----------
+
+const arrayIt = [0, 1, 2, 3, 4, 5];
+
+const iterator1 = arrayIt.entries();
+// Now It Has Become An Iterator Object
+
+/* 
+     It provides a standardized way to iterate over elements in a collection or sequence.
+     Iterator objects are commonly used in JavaScript for iterating over arrays, strings, maps, sets, and other iterable objects. They provide a uniform way to access the elements of a collection one by one, regardless of the specific data structure or implementation details.
+*/
+
+// console.log(iterator1.next());
+// console.log(iterator1.next().value);
+// console.log(iterator1.next().value);
+// console.log(iterator1.next().value);
+// console.log(iterator1.next().value);
+// console.log(iterator1.next().value);
+// console.log(iterator1.next().value);
+
+
+// const another_array = [1, 2, 3, [4, 5,[2, 3], 6], 7, [6, 7, [4, 5]]]
+
+// const real_another_array = another_array.flat()
+// console.log(real_another_array);
+
+
+// console.log(Array.isArray("Hitesh"))
+// console.log(Array.from("Hitesh"))
+// console.log(Array.from({0: "hitesh", length: 3})) // interesting
+
+// let score1 = 100
+// let score2 = 200
+// let score3 = 300
+
+// console.log(Array.of(score1, score2, score3));
+
+const obj = {
+    0: 'a',
+    1: 'b',
+    2: 'c',
+    // length: 5
+  };
+  
+  const newArray2 = Array.from(obj);
+//   console.log(newArray2); // ['a', 'b', 'c']
+
+  const nameId = `Safiullah`;
+
+//   console.log([...nameId]);
+
+  const myHeroes = ["Nietzsche", "Kant", "Rosseau", "Hegel"];
+
+  const yourHeroes = ["Bin Qasim", "Ghaznavi", "Taimur", "Sher Shah Suri"];
+
+  const ourHeroes = [...myHeroes, ...yourHeroes]
+
+  console.log(ourHeroes);
+
+  console.log(...myHeroes);
+  console.log(...yourHeroes);
+
+  var spreadArray = [...yourHeroes];
+
+  console.log(spreadArray);
+
+  const newStr = myHeroes.concat(yourHeroes).join(",");
+  console.log(newStr);
+  console.log( typeof newStr);
+
+
+  // ----------  IMP Note --------
+
+ // false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
